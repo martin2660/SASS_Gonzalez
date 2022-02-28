@@ -1,0 +1,182 @@
+@media (max-width: 500px) {
+	body {
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr 1fr;
+    margin: 0;
+  }
+
+  header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(249, 218, 16);
+    padding: 5%
+  }
+
+  section{
+    background-color: rgb(249, 218, 16);
+		margin: 0;
+		padding: 0;
+  }
+
+  #imgPrincipal{
+    width: 100%;
+  }
+
+  footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+	.tituloAnimado{
+		animation-name: title;
+		animation-iteration-count: 1;
+		animation-duration: 2s;
+	}
+
+	@keyframes title {
+		from {
+			transform: translate(-250px);
+			opacity: 0;
+		}
+
+		to {
+			transform: translate(0px);
+			opacity: 1;
+
+		}
+	}
+}
+
+@media (min-width: 501px) and (max-width: 1023px){
+	body {
+    display: grid;
+    grid-template-areas: "menu encabezado"
+													"main main"
+													"pie pie";
+	  margin: 0;
+}
+
+	header{
+		grid-area: encabezado;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		background-color: rgb(249, 218, 16);
+	}
+
+	section{
+		grid-area: menu;
+		background-color: rgb(249, 218, 16);
+	}
+
+	main{
+		grid-area: main;
+		background-color: rgb(188, 246, 25);
+	}
+
+	footer{
+		grid-area: pie;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.margenIzquierda{
+    margin-left: 10px;
+  }
+
+  .margenArriba{
+    margin-top: 10px;
+  }
+
+	.tituloAnimado{
+		animation-name: title;
+		animation-iteration-count: 1;
+		animation-duration: 2s;
+	}
+
+	@keyframes title {
+		from {
+			transform: translate(-250px);
+			opacity: 0;
+		}
+
+		to {
+			transform: translate(0px);
+			opacity: 1;
+
+		}
+	}
+}
+
+@media (min-width: 1024px){
+  body {
+    display: grid;
+    grid-template-areas: "menu encabezado"
+													"main main"
+													"pie pie";
+		margin: 0;
+}
+
+	header{
+		grid-area: encabezado;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		background-color: rgb(249, 218, 16);
+		padding: 5%;
+		margin: 0;
+	}
+
+	section{
+		grid-area: menu;
+		background-color: rgb(249, 218, 16);
+		padding: 5%;
+		margin: 0;
+	}
+
+	main{
+		grid-area: main;
+		background-color: rgb(188, 246, 25);
+	}
+
+	footer{
+		grid-area: pie;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.margenIzquierda{
+    margin-left: 10px;
+  }
+
+  .margenArriba{
+    margin-top: 10px;
+  }
+
+	.section1{
+		background-color: rgb(249, 218, 16);
+		margin: 0;
+	}
+
+	.tituloAnimado{
+		animation-name: title;
+		animation-iteration-count: 1;
+		animation-duration: 2s;
+	}
+
+	@keyframes title {
+		from {
+			transform: translate(-250px);
+			opacity: 0;
+		}
+
+		to {
+			transform: translate(0px);
+			opacity: 1;
+			}
+		}
+}

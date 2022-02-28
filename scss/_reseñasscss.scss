@@ -1,0 +1,165 @@
+@media (max-width: 500px) {
+
+  body {
+    display: grid;
+    grid-template-rows: 150px 150px 70% 100px;
+    margin: 0;
+width: 500px;
+  }
+
+  header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(249, 218, 16);
+    margin: 0;
+    width: 500px;
+  }
+
+  main section div{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 500px;
+  }
+
+
+  footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 500px;
+  }
+
+  footer div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+
+  .color1{
+    background-color: rgb(249, 218, 16);
+  }
+
+  .color2{
+      Background-image: radial-gradient(rgb(188, 246, 25) 60%,rgb(54, 213, 56) 75%);
+  }
+
+  .estiloLetra{
+    font-style: italic;
+    font-size: 19px;
+  }
+
+  .tituloAnimado{
+    animation-name: title;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+  }
+
+  @keyframes title {
+    from {
+      transform: translate(-250px);
+      opacity: 0;
+    }
+
+    to {
+      transform: translate(0px);
+      opacity: 1;
+      }
+    }
+}
+
+
+@media (min-width: 501px){
+
+  body {
+    display: grid;
+    grid-template-areas: "menu encabezado"
+													"main main"
+													"pie pie";
+		margin: 0;
+}
+
+	header{
+		grid-area: encabezado;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+    align-items: center;
+		background-color: rgb(249, 218, 16);
+		padding: 5%;
+	}
+
+	article {
+		grid-area: menu;
+    align-items: center;
+		background-color: rgb(249, 218, 16);
+		padding: 5%;
+	}
+
+	main{
+		grid-area: main;
+		background-color: rgb(188, 246, 25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+
+	}
+
+  main section div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+	footer{
+		grid-area: pie;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+  footer div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+	.tituloAnimado{
+		animation-name: title;
+		animation-iteration-count: 1;
+		animation-duration: 2s;
+	}
+
+	@keyframes title {
+		from {
+			transform: translate(-250px);
+			opacity: 0;
+		}
+
+		to {
+			transform: translate(0px);
+			opacity: 1;
+			}
+		}
+
+  .color1{
+    background-color: rgb(249, 218, 16);
+  }
+
+  .color2{
+      Background-image: radial-gradient(rgb(188, 246, 25) 60%,rgb(54, 213, 56) 75%);
+  }
+}
